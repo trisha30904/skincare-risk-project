@@ -29,3 +29,36 @@ characteristics are associated with different reaction-risk groups.
 
 ## Technologies
 Python • pandas • NumPy • scikit-learn • Jupyter Notebook
+
+## Results
+The multinomial logistic regression model achieved approximately **65% classification accuracy** across the three reaction-risk categories: dryness, irritation, and acne.
+## Example Predictions
+
+The trained model can take a skincare product's ingredient list and
+estimate the probability of different consumer-reported reaction concerns.
+
+### Clear Improvement Active Charcoal Mask
+
+**Ingredients:** Water, Myrtus Communis, Kaolin, Bentonite, Butylene Glycol,
+Xanthan Gum
+
+| Predicted Concern | Probability |
+|---|---:|
+| Dryness | 70.2% |
+| Irritation | 15.4% |
+| Acne | 14.4% |
+
+**Predicted concern: Dryness**
+
+### Supergoop Unseen Sunscreen SPF 40
+
+**Ingredients:** Isododecane, Dimethicone, Tocopherol, Octocrylene,
+Caprylyl Glycol
+
+| Predicted Concern | Probability |
+|---|---:|
+| Irritation | 79.3% |
+| Dryness | 17.4% |
+| Acne | 3.3% |
+
+**Predicted concern: Irritation**
